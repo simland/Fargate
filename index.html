@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Monte Carlo</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+			<header>
+				<h1>Object Parser</h1>
+			</header>
+			<div id="player1">
+				<p>Name: <input type="text" id="p1_name"value="Picard"></p>
+				<p>Melee: <input type="text" id="p1_dice_set"value="2d6"></p>
+				<p>Armor: <input type="text" id="p1_armor" value="1d4"></p>
+				<p>Resistance: <input type="text" id="p1_resistance" value="2"></p>
+				<p>Wounds: <input type="text" id="p1_wounds" value="2"></p>
+			</div>
+			<div id="player2">
+				<p>Name: <input type="text" id="p2_name"value="Kirk"></p>
+				<p>Melee: <input type="text" id="p2_dice_set"value="2d4"></p>
+				<p>Armor: <input type="text" id="p2_armor" value="1d6"></p>
+				<p>Resistance: <input type="text" id="p2_resistance" value="2"></p>
+				<p>Wounds: <input type="text" id="p2_wounds" value="2"></p>
+			</div>
+			<div id="output">
+				<p>Simulations: <input type="text" id="simulations" value="100"></p>
+				<p>Iterations: <input type="text" id="iterations" value="30"></p>
+				<button id="subCompare">Run Contest!</button>
+				<textarea id="output_text" rows="25" cols="100">Results</textarea>
+			</div>
+		</div>
+		<script src="js/libs/underscore-min.js"></script>
+		<script src="js/libs/backbone-min.js"></script>
+		<script src="js/libs/jquery-1.8.2.min.js"></script>
+		<script src="js/dice.js"></script>
+		<script src="js/player.js"></script>
+		<script src="js/main.js"></script>
+    </body>
+</html>
